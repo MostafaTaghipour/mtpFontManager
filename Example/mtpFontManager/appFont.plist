@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>Ultra Light</key>
-        <string>Lato-Hairline</string>
-        <key>Thin</key>
-        <string>Lato-Thin</string>
-        <key>Light</key>
-        <string>Lato-Light</string>
-        <key>Regular</key>
-        <string>Lato-Regular</string>
-        <key>Medium</key>
-        <string>Lato-Medium</string>
-        <key>Semibold</key>
-        <string>Lato-Semibold</string>
-        <key>Bold</key>
-        <string>Lato-Bold</string>
-        <key>Heavy</key>
-        <string>Lato-Heavy</string>
-        <key>Black</key>
-        <string>Lato-Black</string>
-    </dict>
+<dict>
+	<key>Ultra Light</key>
+	<string>Lato-Hairline</string>
+	<key>Thin</key>
+	<string>Lato-Thin</string>
+	<key>Light</key>
+	<string>Lato-Light</string>
+	<key>Regular</key>
+	<string>Lato-Regular</string>
+	<key>Medium</key>
+	<string>Lato-Medium</string>
+	<key>Semibold</key>
+	<string>Lato-Semibold</string>
+	<key>Bold</key>
+	<string>Lato-Bold</string>
+	<key>Heavy</key>
+	<string>Lato-Heavy</string>
+	<key>Black</key>
+	<string>Lato-Black</string>
+</dict>
 </plist>
-

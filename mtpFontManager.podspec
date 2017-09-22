@@ -23,9 +23,9 @@ mtpFontManager also supports applay custom font entire application, varius font 
   DESC
 
   s.homepage         = 'https://github.com/mostafataghipour/mtpFontManager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://raw.githubusercontent.com/MostafaTaghipour/mtpFontManager/master/Simulator%20Screen%20Shot%20Sep%2020%2C%202017%2C%2010.39.54%20PM.png', 'https://raw.githubusercontent.com/MostafaTaghipour/mtpFontManager/master/3.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mostafa.taghipour@ymail.com' => 'mostafa.taghipour@ymail.com' }
+  s.author           = { 'Mostafa Taghipour' => 'mostafa.taghipour@ymail.com' }
   s.source           = { :git => 'https://github.com/mostafataghipour/mtpFontManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
