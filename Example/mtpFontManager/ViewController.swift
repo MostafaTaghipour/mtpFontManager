@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import mtpFontManager
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var label: UILabel!
+    
+    let watcher = StyleWatcher()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        label.font=UIFont.preferredFont(forTextStyle: .body)
+        
+        watcher.watchViews(inView: view)
     }
 
     override func didReceiveMemoryWarning() {

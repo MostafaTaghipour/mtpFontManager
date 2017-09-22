@@ -35,5 +35,17 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Lato-Thin.ttf</string>
+        <string>Lato-Light.ttf</string>
+        <string>Lato-Hairline.ttf</string>
+        <string>Lato-Regular.ttf</string>
+        <string>Lato-Medium.ttf</string>
+        <string>Lato-Semibold.ttf</string>
+        <string>Lato-Bold.ttf</string>
+        <string>Lato-Heavy.ttf</string>
+        <string>Lato-Black.ttf</string>
+    </array>
 </dict>
 </plist>

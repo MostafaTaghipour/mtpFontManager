@@ -1,0 +1,6 @@
+framework module mtpFontManager {
+  umbrella header "mtpFontManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

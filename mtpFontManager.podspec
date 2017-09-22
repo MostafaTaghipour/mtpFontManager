@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mtpFontManager'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of mtpFontManager.'
+  s.version          = '1.0.0'
+  s.summary          = 'A font Manager for iOS to simplify use of custom fonts (support dynamic types).'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+mtpFontManager is a font Manager for iOS to simplify use of custom fonts.
+mtpFontManager also supports applay custom font entire application, varius font weight and dynamic types styles.
+  DESC
 
-  s.homepage         = 'https://github.com/mostafa.taghipour@ymail.com/mtpFontManager'
+  s.homepage         = 'https://github.com/mostafataghipour/mtpFontManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mostafa.taghipour@ymail.com' => 'mostafa.taghipour@ymail.com' }
-  s.source           = { :git => 'https://github.com/mostafa.taghipour@ymail.com/mtpFontManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mostafataghipour/mtpFontManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.2'
 
   s.source_files = 'mtpFontManager/Classes/**/*'
   
@@ -37,6 +38,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

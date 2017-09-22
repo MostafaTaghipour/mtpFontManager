@@ -1,0 +1,23 @@
+{
+  "name": "mtpFontManager",
+  "version": "1.0.0",
+  "summary": "A font manager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mostafataghipour/mtpFontManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mostafa.taghipour@ymail.com": "mostafa.taghipour@ymail.com"
+  },
+  "source": {
+    "git": "https://github.com/mostafataghipour/mtpFontManager.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.2"
+  },
+  "source_files": "mtpFontManager/Classes/**/*",
+  "frameworks": "UIKit"
+}
