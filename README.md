@@ -49,22 +49,22 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     //'appFont' is the name of the plist file created by you
     FontManager.setFont(plist: "appFont")
 
-return true
+    return true
 }
 ```
 
 4. Use the font in the usual way
 
-storyboard:
+    storyboard:
 
-![use storyboard](/screenshots/4.png)
+    ![use storyboard](/screenshots/4.png)
 
-or Programmically:
+    or Programmically:
 
-```swift
-    label.font=UIFont.preferredFont(forTextStyle: .body)
-    label2.font=UIFont.boldSystemFont(ofSize: 17.0)
-```
+    ```swift
+        label.font=UIFont.preferredFont(forTextStyle: .body)
+        label2.font=UIFont.boldSystemFont(ofSize: 17.0)
+    ```
 
 5. If you want use dynamic types declare StyleWatcher in your view controller and watch views that use dynamic fonts , like this
 
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //if you want use dynamic types programmically, you must dcleare it before watch views
+        //if you want use dynamic types programmically, you must declare it before watch views
         label.font=UIFont.preferredFont(forTextStyle: .body)
 
         //whatch view that include the controls that use dynamic types
