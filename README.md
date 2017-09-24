@@ -31,69 +31,69 @@ mtpFontManager is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'mtpFontManager'
+    pod 'mtpFontManager'
 ```
 
 ## Usage
-1.Add your custom font to  your project ([you can use this link](https://medium.com/yay-its-erica/how-to-import-fonts-into-xcode-swift-3-f0de7e921ef8))
+1. Add your custom font to  your project ([you can use this link](https://medium.com/yay-its-erica/how-to-import-fonts-into-xcode-swift-3-f0de7e921ef8))
 
-2.Create new plist file and declare your font for various weights
+2. Create new plist file and declare your font for various weights
 
-![font plist file](/3.png)
+![font plist file](/screenshots/3.png)
 
-3.Apply your custom font in AppDelegate and pass the name of the plist file created by you
+3. Apply your custom font in AppDelegate and pass the name of the plist file created by you
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-//'appFont' is the name of the plist file created by you
-FontManager.setFont(plist: "appFont")
+    //'appFont' is the name of the plist file created by you
+    FontManager.setFont(plist: "appFont")
 
 return true
 }
 ```
 
-4.Use the font in the usual way
+4. Use the font in the usual way
 
 storyboard:
 
-![use storyboard](/screenshots/3.png)
+![use storyboard](/screenshots/4.png)
 
 or Programmically:
 
 ```swift
-label.font=UIFont.preferredFont(forTextStyle: .body)
-label2.font=UIFont.boldSystemFont(ofSize: 17.0)
+    label.font=UIFont.preferredFont(forTextStyle: .body)
+    label2.font=UIFont.boldSystemFont(ofSize: 17.0)
 ```
 
-5.If you want use dynamic types declare StyleWatcher in your view controller and watch views that use dynamic fonts , like this
+5. If you want use dynamic types declare StyleWatcher in your view controller and watch views that use dynamic fonts , like this
 
 ```swift
 import UIKit
 import mtpFontManager
 
 class ViewController: UIViewController {
-@IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label: UILabel!
 
-let watcher = StyleWatcher()
+    let watcher = StyleWatcher()
 
-override func viewDidLoad() {
-super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-//if you want use dynamic types programmically, you must dcleare it before watch views
-label.font=UIFont.preferredFont(forTextStyle: .body)
+        //if you want use dynamic types programmically, you must dcleare it before watch views
+        label.font=UIFont.preferredFont(forTextStyle: .body)
 
-//whatch view that include the controls that use dynamic types
-watcher.watchViews(inView: view)
+        //whatch view that include the controls that use dynamic types
+        watcher.watchViews(inView: view)
 
-//Or you can just watch spececific control that use dynamic types
-/*
-watcher.watchLabel(label: label)
-watcher.watchButton(label: button)
-watcher.watchTextField(label: textField)
-watcher.watchTextView(label: textView)
-*/
-}
+        //Or you can just watch spececific control that use dynamic types
+        /*
+        watcher.watchLabel(label: label)
+        watcher.watchButton(label: button)
+        watcher.watchTextField(label: textField)
+        watcher.watchTextView(label: textView)
+        */
+    }
 }
 ```
 
