@@ -15,9 +15,9 @@ mtpFontManger is a font manager for iOS:
 - Supports various styles
 - Supports dynamic types styles
 
-![dynamic types](/3.gif)
+![dynamic types](/screenshots/1.gif)
 
-<img src="/Simulator%20Screen%20Shot%20Sep%2020%2C%202017%2C%2010.39.54%20PM.png" width="400">
+![system font](/screenshots/2.png)
 
 
 
@@ -39,7 +39,7 @@ pod 'mtpFontManager'
 
 2.Create new plist file and declare your font for various weights
 
-![font plist file](https://raw.githubusercontent.com/MostafaTaghipour/mtpFontManager/master/Screen%20Shot%202017-09-22%20at%2011.24.15%20PM.png)
+![font plist file](/3.png)
 
 3.Apply your custom font in AppDelegate and pass the name of the plist file created by you
 
@@ -51,6 +51,19 @@ FontManager.setFont(plist: "appFont")
 
 return true
 }
+```
+
+4.Use the font in the usual way
+
+storyboard:
+
+![use storyboard](/screenshots/3.png)
+
+or Programmically:
+
+```swift
+label.font=UIFont.preferredFont(forTextStyle: .body)
+label2.font=UIFont.boldSystemFont(ofSize: 17.0)
 ```
 
 5.If you want use dynamic types declare StyleWatcher in your view controller and watch views that use dynamic fonts , like this
@@ -66,11 +79,20 @@ let watcher = StyleWatcher()
 
 override func viewDidLoad() {
 super.viewDidLoad()
-// Do any additional setup after loading the view, typically from a nib.
 
+//if you want use dynamic types programmically, you must dcleare it before watch views
 label.font=UIFont.preferredFont(forTextStyle: .body)
 
+//whatch view that include the controls that use dynamic types
 watcher.watchViews(inView: view)
+
+//Or you can just watch spececific control that use dynamic types
+/*
+watcher.watchLabel(label: label)
+watcher.watchButton(label: button)
+watcher.watchTextField(label: textField)
+watcher.watchTextView(label: textView)
+*/
 }
 }
 ```
@@ -94,4 +116,3 @@ Mostafa Taghipour, mostafa.taghipour@ymail.com
 ## License
 
 mtpFontManager is available under the MIT license. See the LICENSE file for more info.
-
