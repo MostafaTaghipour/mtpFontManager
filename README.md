@@ -55,11 +55,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 4. Use the font in the usual way
 
-    storyboard:
+    Interface Builder:
 
     ![use storyboard](/screenshots/4.png)
 
-    or Programmically:
+    Or Programmically:
 
     ```swift
         label.font=UIFont.preferredFont(forTextStyle: .body)
