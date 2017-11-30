@@ -221,14 +221,24 @@ extension Dictionary where Key : ExpressibleByStringLiteral {
 public extension UIFont {
     
     public class func contains(fontWith name:String) -> Bool{
-        for family in UIFont.familyNames {
-            for fontName in UIFont.fontNames(forFamilyName: family) {
+        for family in familyNames {
+            for fontName in fontNames(forFamilyName: family) {
                 if fontName==name{
                     return true
                 }
             }
         }
         return false
+    }
+    
+    public class func printAllFonts(){
+        for family in familyNames {
+            print(family)
+            for fontName in fontNames(forFamilyName: family) {
+                print("\t\(fontName)")
+            }
+            print("\n")
+        }
     }
 }
 
@@ -286,6 +296,17 @@ extension UIFont {
         return UIFont(name: fontName, size: size)!
     }
     
+    
+    fileprivate static func setNavbarFont() {
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.font: UIFont(name: AppFont.shared.Semibold, size: 17)!
+        ]
+        
+        if #available(iOS 9.0, *) {
+            UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: AppFont.shared.Regular, size: 17)!], for: .normal)
+        }
+    }
     
     // override system font in IB
     @objc private convenience init(myCoder aDecoder: NSCoder) {
@@ -349,6 +370,9 @@ extension UIFont {
             let initCoderMethod = class_getInstanceMethod(self, #selector(UIFontDescriptor.init(coder:)))! // Trick to get over the lack of UIFont.init(coder:))
             let myInitCoderMethod = class_getInstanceMethod(self, #selector(UIFont.init(myCoder:)))!
             method_exchangeImplementations(initCoderMethod, myInitCoderMethod)
+            
+            //resolve navigationbar font issues
+            setNavbarFont()
         }
     }
 }
