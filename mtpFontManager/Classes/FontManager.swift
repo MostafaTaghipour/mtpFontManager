@@ -299,14 +299,26 @@ extension UIFont {
     
     fileprivate static func setNavbarFont() {
         
-        UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedStringKey.font: UIFont(name: AppFont.shared.Semibold, size: 17)!
-        ]
+        let apperance = UINavigationBar.appearance()
+        var titleAttr = apperance.titleTextAttributes ??  [:]
+        titleAttr.updateValue( UIFont(name: AppFont.shared.Semibold, size: 17)!, forKey:  NSAttributedStringKey.font)
+        apperance.titleTextAttributes = titleAttr
+        
         
         if #available(iOS 9.0, *) {
-            UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: AppFont.shared.Regular, size: 17)!], for: .normal)
+            let buttonBarAppearance=UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self])
+            var barButtonTitleAttr = buttonBarAppearance.titleTextAttributes(for: .normal) ?? [:]
+            
+            barButtonTitleAttr.updateValue(UIFont(name: AppFont.shared.Regular, size: 17)!, forKey: NSAttributedStringKey.font.rawValue)
+            
+            let convertedAttributes = Dictionary(uniqueKeysWithValues:
+                barButtonTitleAttr.lazy.map { (NSAttributedStringKey($0.key), $0.value) }
+            )
+            buttonBarAppearance.setTitleTextAttributes(convertedAttributes, for: .normal)
         }
+        
     }
+
     
     // override system font in IB
     @objc private convenience init(myCoder aDecoder: NSCoder) {
