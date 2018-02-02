@@ -96,7 +96,7 @@ public class FontManager {
 
 // MARK: - define title property for UIFont.Weight
 public extension UIFont.Weight {
-    var title:String{
+  public var title:String{
         switch self {
         case .ultraLight:
             return "Ultra Light"
@@ -124,30 +124,30 @@ public extension UIFont.Weight {
 
 /// Font name struct
 public struct FontName {
-    var Ultra_Light:String?
-    var Thin:String?
-    var Light:String?
-    var Regular:String?
-    var Medium:String?
-    var Semibold:String?
-    var Bold:String?
-    var Heavy:String?
-    var Black:String?
+   public var Ultra_Light:String?
+   public var Thin:String?
+   public var Light:String?
+   public var Regular:String?
+   public var Medium:String?
+   public var Semibold:String?
+   public var Bold:String?
+   public var Heavy:String?
+   public var Black:String?
 }
 
 
 
 /// App font Singelton
 public class AppFont {
-    var Ultra_Light=""
-    var Thin=""
-    var Light=""
-    var Regular=""
-    var Medium=""
-    var Semibold=""
-    var Bold=""
-    var Heavy=""
-    var Black=""
+   public var Ultra_Light=""
+   public var Thin=""
+   public var Light=""
+   public var Regular=""
+   public var Medium=""
+   public var Semibold=""
+   public var Bold=""
+   public var Heavy=""
+   public var Black=""
     
     static let shared = AppFont()
     
