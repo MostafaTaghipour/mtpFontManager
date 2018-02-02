@@ -10,7 +10,7 @@
 mtpFontManger is a font manager for iOS:
 
 - Support custom fonts
-- Applay to entire project
+- Apply to entire project
 - Interface builder compatible
 - Supports various styles
 - Supports dynamic types styles
