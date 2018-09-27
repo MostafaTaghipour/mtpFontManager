@@ -31,7 +31,7 @@ mtpFontManager is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-    pod 'mtpFontManager'
+pod 'mtpFontManager'
 ```
 
 ## Usage
@@ -62,8 +62,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     Or Programmically:
 
     ```swift
-        label.font=UIFont.preferredFont(forTextStyle: .body)
-        label2.font=UIFont.boldSystemFont(ofSize: 17.0)
+    label.font=UIFont.preferredFont(forTextStyle: .body)
+    label2.font=UIFont.boldSystemFont(ofSize: 17.0)
     ```
 
 5. If you want use dynamic types declare StyleWatcher in your view controller and watch views that use dynamic fonts , like this
