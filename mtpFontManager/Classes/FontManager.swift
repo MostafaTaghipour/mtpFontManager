@@ -35,59 +35,59 @@ public class FontManager {
         var config = StyleConfig()
         
         //label
-        config.label[UIFontTextStyle.body.rawValue] = AppFont.shared.Regular
-        config.label[UIFontTextStyle.caption1.rawValue] = AppFont.shared.Regular
-        config.label[UIFontTextStyle.caption2.rawValue] = AppFont.shared.Regular
-        config.label[UIFontTextStyle.footnote.rawValue] = AppFont.shared.Regular
-        config.label[UIFontTextStyle.headline.rawValue] = AppFont.shared.Semibold
-        config.label[UIFontTextStyle.subheadline.rawValue] = AppFont.shared.Regular
+        config.label[UIFont.TextStyle.body.rawValue] = AppFont.shared.Regular
+        config.label[UIFont.TextStyle.caption1.rawValue] = AppFont.shared.Regular
+        config.label[UIFont.TextStyle.caption2.rawValue] = AppFont.shared.Regular
+        config.label[UIFont.TextStyle.footnote.rawValue] = AppFont.shared.Regular
+        config.label[UIFont.TextStyle.headline.rawValue] = AppFont.shared.Semibold
+        config.label[UIFont.TextStyle.subheadline.rawValue] = AppFont.shared.Regular
         if #available(iOS 9.0, *) {
-            config.label[UIFontTextStyle.callout.rawValue] = AppFont.shared.Regular
-            config.label[UIFontTextStyle.title1.rawValue] = AppFont.shared.Regular
-            config.label[UIFontTextStyle.title2.rawValue] = AppFont.shared.Regular
-            config.label[UIFontTextStyle.title3.rawValue] = AppFont.shared.Regular
+            config.label[UIFont.TextStyle.callout.rawValue] = AppFont.shared.Regular
+            config.label[UIFont.TextStyle.title1.rawValue] = AppFont.shared.Regular
+            config.label[UIFont.TextStyle.title2.rawValue] = AppFont.shared.Regular
+            config.label[UIFont.TextStyle.title3.rawValue] = AppFont.shared.Regular
         }
         
         //textView
-        config.textView[UIFontTextStyle.body.rawValue] = AppFont.shared.Regular
-        config.textView[UIFontTextStyle.caption1.rawValue] = AppFont.shared.Regular
-        config.textView[UIFontTextStyle.caption2.rawValue] = AppFont.shared.Regular
-        config.textView[UIFontTextStyle.footnote.rawValue] = AppFont.shared.Regular
-        config.textView[UIFontTextStyle.headline.rawValue] = AppFont.shared.Semibold
-        config.textView[UIFontTextStyle.subheadline.rawValue] = AppFont.shared.Regular
+        config.textView[UIFont.TextStyle.body.rawValue] = AppFont.shared.Regular
+        config.textView[UIFont.TextStyle.caption1.rawValue] = AppFont.shared.Regular
+        config.textView[UIFont.TextStyle.caption2.rawValue] = AppFont.shared.Regular
+        config.textView[UIFont.TextStyle.footnote.rawValue] = AppFont.shared.Regular
+        config.textView[UIFont.TextStyle.headline.rawValue] = AppFont.shared.Semibold
+        config.textView[UIFont.TextStyle.subheadline.rawValue] = AppFont.shared.Regular
         if #available(iOS 9.0, *) {
-            config.textView[UIFontTextStyle.title1.rawValue] = AppFont.shared.Regular
-            config.textView[UIFontTextStyle.title2.rawValue] = AppFont.shared.Regular
-            config.textView[UIFontTextStyle.title3.rawValue] = AppFont.shared.Regular
-            config.textView[UIFontTextStyle.callout.rawValue] = AppFont.shared.Regular
+            config.textView[UIFont.TextStyle.title1.rawValue] = AppFont.shared.Regular
+            config.textView[UIFont.TextStyle.title2.rawValue] = AppFont.shared.Regular
+            config.textView[UIFont.TextStyle.title3.rawValue] = AppFont.shared.Regular
+            config.textView[UIFont.TextStyle.callout.rawValue] = AppFont.shared.Regular
         }
         
         //textField
-        config.textField[UIFontTextStyle.body.rawValue] = AppFont.shared.Regular
-        config.textField[UIFontTextStyle.caption1.rawValue] = AppFont.shared.Regular
-        config.textField[UIFontTextStyle.caption2.rawValue] = AppFont.shared.Regular
-        config.textField[UIFontTextStyle.footnote.rawValue] = AppFont.shared.Regular
-        config.textField[UIFontTextStyle.headline.rawValue] = AppFont.shared.Semibold
-        config.textField[UIFontTextStyle.subheadline.rawValue] = AppFont.shared.Regular
+        config.textField[UIFont.TextStyle.body.rawValue] = AppFont.shared.Regular
+        config.textField[UIFont.TextStyle.caption1.rawValue] = AppFont.shared.Regular
+        config.textField[UIFont.TextStyle.caption2.rawValue] = AppFont.shared.Regular
+        config.textField[UIFont.TextStyle.footnote.rawValue] = AppFont.shared.Regular
+        config.textField[UIFont.TextStyle.headline.rawValue] = AppFont.shared.Semibold
+        config.textField[UIFont.TextStyle.subheadline.rawValue] = AppFont.shared.Regular
         if #available(iOS 9.0, *) {
-            config.textField[UIFontTextStyle.title1.rawValue] = AppFont.shared.Regular
-            config.textField[UIFontTextStyle.title2.rawValue] = AppFont.shared.Regular
-            config.textField[UIFontTextStyle.title3.rawValue] = AppFont.shared.Regular
-            config.textField[UIFontTextStyle.callout.rawValue] = AppFont.shared.Regular
+            config.textField[UIFont.TextStyle.title1.rawValue] = AppFont.shared.Regular
+            config.textField[UIFont.TextStyle.title2.rawValue] = AppFont.shared.Regular
+            config.textField[UIFont.TextStyle.title3.rawValue] = AppFont.shared.Regular
+            config.textField[UIFont.TextStyle.callout.rawValue] = AppFont.shared.Regular
         }
         
         //button
-        config.button[UIFontTextStyle.body.rawValue] = AppFont.shared.Regular
-        config.button[UIFontTextStyle.caption1.rawValue] = AppFont.shared.Regular
-        config.button[UIFontTextStyle.caption2.rawValue] = AppFont.shared.Regular
-        config.button[UIFontTextStyle.footnote.rawValue] = AppFont.shared.Regular
-        config.button[UIFontTextStyle.headline.rawValue] = AppFont.shared.Semibold
-        config.button[UIFontTextStyle.subheadline.rawValue] = AppFont.shared.Regular
+        config.button[UIFont.TextStyle.body.rawValue] = AppFont.shared.Regular
+        config.button[UIFont.TextStyle.caption1.rawValue] = AppFont.shared.Regular
+        config.button[UIFont.TextStyle.caption2.rawValue] = AppFont.shared.Regular
+        config.button[UIFont.TextStyle.footnote.rawValue] = AppFont.shared.Regular
+        config.button[UIFont.TextStyle.headline.rawValue] = AppFont.shared.Semibold
+        config.button[UIFont.TextStyle.subheadline.rawValue] = AppFont.shared.Regular
         if #available(iOS 9.0, *) {
-            config.button[UIFontTextStyle.title1.rawValue] = AppFont.shared.Regular
-            config.button[UIFontTextStyle.title2.rawValue] = AppFont.shared.Regular
-            config.button[UIFontTextStyle.title3.rawValue] = AppFont.shared.Regular
-            config.button[UIFontTextStyle.callout.rawValue] = AppFont.shared.Regular
+            config.button[UIFont.TextStyle.title1.rawValue] = AppFont.shared.Regular
+            config.button[UIFont.TextStyle.title2.rawValue] = AppFont.shared.Regular
+            config.button[UIFont.TextStyle.title3.rawValue] = AppFont.shared.Regular
+            config.button[UIFont.TextStyle.callout.rawValue] = AppFont.shared.Regular
         }
         
         StyleWatcher.defaultConfig = config
@@ -96,7 +96,7 @@ public class FontManager {
 
 // MARK: - define title property for UIFont.Weight
 public extension UIFont.Weight {
-  public var title:String{
+    public var title:String{
         switch self {
         case .ultraLight:
             return "Ultra Light"
@@ -124,32 +124,32 @@ public extension UIFont.Weight {
 
 /// Font name struct
 public struct FontName {
-   public var Ultra_Light:String?
-   public var Thin:String?
-   public var Light:String?
-   public var Regular:String?
-   public var Medium:String?
-   public var Semibold:String?
-   public var Bold:String?
-   public var Heavy:String?
-   public var Black:String?
+    public var Ultra_Light:String?
+    public var Thin:String?
+    public var Light:String?
+    public var Regular:String?
+    public var Medium:String?
+    public var Semibold:String?
+    public var Bold:String?
+    public var Heavy:String?
+    public var Black:String?
 }
 
 
 
 /// App font Singelton
 public class AppFont {
-   public var Ultra_Light=""
-   public var Thin=""
-   public var Light=""
-   public var Regular=""
-   public var Medium=""
-   public var Semibold=""
-   public var Bold=""
-   public var Heavy=""
-   public var Black=""
+    public var Ultra_Light=""
+    public var Thin=""
+    public var Light=""
+    public var Regular=""
+    public var Medium=""
+    public var Semibold=""
+    public var Bold=""
+    public var Heavy=""
+    public var Black=""
     
-    static let shared = AppFont()
+    public static let shared = AppFont()
     
     private init(){
         
@@ -301,29 +301,29 @@ extension UIFont {
         
         let apperance = UINavigationBar.appearance()
         var titleAttr = apperance.titleTextAttributes ??  [:]
-        titleAttr.updateValue( UIFont(name: AppFont.shared.Semibold, size: 17)!, forKey:  NSAttributedStringKey.font)
+        titleAttr.updateValue( UIFont(name: AppFont.shared.Semibold, size: 17)!, forKey:  NSAttributedString.Key.font)
         apperance.titleTextAttributes = titleAttr
         
         
         if #available(iOS 9.0, *) {
             let buttonBarAppearance=UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self])
-            var barButtonTitleAttr = buttonBarAppearance.titleTextAttributes(for: .normal) ?? [:]
+            var barButtonTitleAttr = convertFromOptionalNSAttributedStringKeyDictionary(buttonBarAppearance.titleTextAttributes(for: .normal)) ?? [:]
             
-            barButtonTitleAttr.updateValue(UIFont(name: AppFont.shared.Regular, size: 17)!, forKey: NSAttributedStringKey.font.rawValue)
+            barButtonTitleAttr.updateValue(UIFont(name: AppFont.shared.Regular, size: 17)!, forKey: NSAttributedString.Key.font.rawValue)
             
             let convertedAttributes = Dictionary(uniqueKeysWithValues:
-                barButtonTitleAttr.lazy.map { (NSAttributedStringKey($0.key), $0.value) }
+                barButtonTitleAttr.lazy.map { (NSAttributedString.Key($0.key), $0.value) }
             )
             buttonBarAppearance.setTitleTextAttributes(convertedAttributes, for: .normal)
         }
         
     }
-
+    
     
     // override system font in IB
     @objc private convenience init(myCoder aDecoder: NSCoder) {
         if let fontDescriptor = aDecoder.decodeObject(forKey: "UIFontDescriptor") as? UIFontDescriptor {
-            let fontAttr = UIFontDescriptor.AttributeName("NSCTFontUIUsageAttribute")
+            let fontAttr = UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")
             if let fontAttribute = fontDescriptor.fontAttributes[fontAttr] as? String {
                 var fontName = ""
                 switch fontAttribute {
@@ -387,4 +387,10 @@ extension UIFont {
             setNavbarFont()
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromOptionalNSAttributedStringKeyDictionary(_ input: [NSAttributedString.Key: Any]?) -> [String: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
 }

@@ -36,7 +36,7 @@ public class DynamicTypeManager {
     private init() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(DynamicTypeManager.contentSizeCategoryDidChange(notification:)),
-                                               name: NSNotification.Name.UIContentSizeCategoryDidChange,
+                                               name: UIContentSizeCategory.didChangeNotification,
                                                object: nil)
     }
     
@@ -115,7 +115,7 @@ public class DynamicTypeManager {
             return UIFont(name: fontName, size: customSize)!
         }
         
-        let systemFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle(rawValue: style))
+        let systemFont = UIFont.preferredFont(forTextStyle: UIFont.TextStyle(rawValue: style))
         guard let customFont = UIFont(name: fontName, size: systemFont.pointSize) else {
             return systemFont
         }
@@ -216,7 +216,7 @@ fileprivate class DynamicFontRegistry {
      */
     func scaledFontSizeForStyle(textStyle: String) -> CGFloat? {
         if let descriptor = styleDictionary[textStyle] {
-            let baseFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle(rawValue: descriptor.originalTextStyle))
+            let baseFont = UIFont.preferredFont(forTextStyle: UIFont.TextStyle(rawValue: descriptor.originalTextStyle))
             return baseFont.pointSize * CGFloat(descriptor.scaleAmount)
         }
         return nil
@@ -227,7 +227,7 @@ fileprivate class DynamicFontRegistry {
 
 fileprivate extension UILabel {
     var textStyle: String? {
-        return font.fontDescriptor.fontAttributes[Constants.dynamicTextAttribute] as? String
+       return font.fontDescriptor.fontAttributes[Constants.dynamicTextAttribute] as? String
     }
 }
 
@@ -357,6 +357,6 @@ public struct StyleWatcher {
 fileprivate struct Constants {
     /// The name of the attribute that Dynamic Type uses when a text style is
     /// set in Interface Builder.
-    static let dynamicTextAttribute =  UIFontDescriptor.AttributeName("NSCTFontUIUsageAttribute")
+    static let dynamicTextAttribute =  UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")
 }
 
