@@ -15,8 +15,8 @@ mtpFontManger is a font manager for iOS:
 - Support Multiple fonts
 - Change font at runtime
 - Interface builder compatible
-- Supports various styles
-- Supports dynamic types styles
+- Supports various styles and weights
+- Supports dynamic types 
 
 
 ![custom font app](/screenshots/1.gif)
@@ -41,83 +41,71 @@ pod 'mtpFontManager'
 
 - Add your custom fonts to your project
 
-![fonts](/screenshots/1.png)
+![fonts](/screenshots/2.png)
 
 - Register your fonts 
 
-### method1 : Register in Info.plist
-After adding the font file to your project, you need to let iOS know about the font. To do this, add the key "Fonts provided by application" to Info.plist (the raw key name is UIAppFonts). Xcode creates an array value for the key; add the name of the font file as an item of the array. Be sure to include the file extension as part of the name.
-![plist](/screenshots/4.png)
+    #### method1 : Register in Info.plist
+    After adding the font file to your project, you need to let iOS know about the font. To do this, add the key "Fonts provided by application" to Info.plist (the raw key name is UIAppFonts). Xcode creates an array value for the key; add the name of the font file as an item of the array. Be sure to include the file extension as part of the name.
+    ![plist](/screenshots/4.png)
 
 
-### method2 : Programmatically load custom fonts
-To this use [FontBlaster library](https://github.com/ArtSabintsev/FontBlaster)
+    #### method2 : Programmatically load custom fonts
+    To this use [FontBlaster library](https://github.com/ArtSabintsev/FontBlaster)
 
-first add FontBlaster library: 
-```ruby
-pod 'mtpFontManager'
-```
+    first add FontBlaster library: 
+        ```ruby
+        pod 'mtpFontManager'
+        ```
 
-
-then load fonts added to the project using the following code:
-```swift
-FontBlaster.blast()
-```
+    then load fonts added to the project using the following code:
+        ```swift
+        FontBlaster.blast()
+        ```
 
 - Declare your fonts
+    ```swift
+    lazy var exo: AppFont = {
+        let font = AppFont(
+            id: 1,
+            familyName: "Exo",
+            defaultFont: "Exo-Regular",
+            ultraLight: "Exo-Thin",
+            thin: "Exo-ExtraLight",
+            light: "Exo-Light",
+            regular: "Exo-Regular",
+            medium: "Exo-Medium",
+            semibold: "Exo-Semibold",
+            bold: "Exo-Bold",
+            heavy: "Exo-ExtraBold",
+            black: "Exo-Black"
+        )
+        return font
+    }()
+    ```                             
 
-```swift
-lazy var exo: AppFont = {
-let font = AppFont(
-id: 1,
-familyName: "Exo",
-defaultFont: "Exo-Regular",
-ultraLight: "Exo-Thin",
-thin: "Exo-ExtraLight",
-light: "Exo-Light",
-regular: "Exo-Regular",
-medium: "Exo-Medium",
-semibold: "Exo-Semibold",
-bold: "Exo-Bold",
-heavy: "Exo-ExtraBold",
-black: "Exo-Black"
-)
-return font
-}()
+    #### declare fonts in plist file
+        Create new plist file and declare your font for various weights:
+        ![plist](/screenshots/3.png)
 
-
-lazy var taviraj: AppFont = {
-let font = AppFont(plist: "taviraj")
-return font
-}()
-```
-
-### declare fonts in plist file
-Create new plist file and declare your font for various weights:
-
-![plist](/screenshots/3.png)
-
-then use AppFont plist constructor:
-
-```swift
-lazy var taviraj: AppFont = {
-let font = AppFont(plist: "taviraj")
-return font
-}()
-```
+        then use AppFont plist constructor:
+        ```swift
+        lazy var taviraj: AppFont = {
+            let font = AppFont(plist: "taviraj")
+            return font
+        }()
+        ```
 
 - Use the font in the usual way
 
-Interface Builder:
+    Interface Builder:
+    ![use storyboard](/screenshots/5.png)
 
-![use storyboard](/screenshots/5.png)
-
-Or Programmically:
-
-```swift
-label.font=UIFont.preferredFont(forTextStyle: .body)
-label2.font=UIFont.boldSystemFont(ofSize: 17.0)
-```
+    Or Programmically:
+    ```swift
+    label.font=UIFont.preferredFont(forTextStyle: .body)
+    label2.font=UIFont.boldSystemFont(ofSize: 17.0)
+    ```
 ### Dynamic Types
 If you want use dynamic types declare StyleWatcher in your view controller and watch views that use dynamic fonts , like this
 
@@ -126,32 +114,31 @@ import UIKit
 import mtpFontManager
 
 class ViewController: UIViewController {
-@IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label: UILabel!
 
-let watcher = StyleWatcher()
+    let watcher = StyleWatcher()
 
-override func viewDidLoad() {
-super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-//if you want use dynamic types programmically, you must declare it before watch views
-label.font=UIFont.preferredFont(forTextStyle: .body)
+        //if you want use dynamic types programmically, you must declare it before watch views
+        label.font=UIFont.preferredFont(forTextStyle: .body)
 
-//whatch view that include the controls that use dynamic types
-watcher.watchViews(inView: view)
+        //whatch view that include the controls that use dynamic types
+        watcher.watchViews(inView: view)
 
-//Or you can just watch spececific control that use dynamic types
-/*
-watcher.watchLabel(label: label)
-watcher.watchButton(label: button)
-watcher.watchTextField(label: textField)
-watcher.watchTextView(label: textView)
-*/
-}
+        //Or you can just watch spececific control that use dynamic types
+        /*
+            watcher.watchLabel(label: label)
+            watcher.watchButton(label: button)
+            watcher.watchTextField(label: textField)
+            watcher.watchTextView(label: textView)
+        */
+    }
 }
 ```
 
 - Any time you need to change the font of the application use the following code
-
 ```kotlin
 FontManager.shared.currentFont = taviraj /* your desired font */
 ```
