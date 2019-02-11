@@ -43,7 +43,7 @@ pod 'mtpFontManager'
 
 ![fonts](/screenshots/2.png)
 
-- Register your fonts 
+1. Register your fonts 
 
     #### method1 : Register in Info.plist
     After adding the font file to your project, you need to let iOS know about the font. To do this, add the key "Fonts provided by application" to Info.plist (the raw key name is UIAppFonts). Xcode creates an array value for the key; add the name of the font file as an item of the array. Be sure to include the file extension as part of the name.
@@ -54,16 +54,18 @@ pod 'mtpFontManager'
     To this use [FontBlaster library](https://github.com/ArtSabintsev/FontBlaster)
 
     first add FontBlaster library: 
+    
         ```ruby
-        pod 'mtpFontManager'
+        pod 'FontBlaster'
         ```
 
     then load fonts added to the project using the following code:
+    
         ```swift
         FontBlaster.blast()
         ```
 
-- Declare your fonts
+2. Declare your fonts
     ```swift
     lazy var exo: AppFont = {
         let font = AppFont(
@@ -82,13 +84,15 @@ pod 'mtpFontManager'
         )
         return font
     }()
-    ```                             
+    ```                            
 
     #### declare fonts in plist file
+    
         Create new plist file and declare your font for various weights:
         ![plist](/screenshots/3.png)
 
         then use AppFont plist constructor:
+        
         ```swift
         lazy var taviraj: AppFont = {
             let font = AppFont(plist: "taviraj")
@@ -96,7 +100,7 @@ pod 'mtpFontManager'
         }()
         ```
 
-- Use the font in the usual way
+3. Use the font in the usual way
 
     Interface Builder:
     ![use storyboard](/screenshots/5.png)
@@ -138,12 +142,12 @@ class ViewController: UIViewController {
 }
 ```
 
-- Any time you need to change the font of the application use the following code
+4. Any time you need to change the font of the application use the following code
 ```kotlin
 FontManager.shared.currentFont = taviraj /* your desired font */
 ```
 
-- Thats it, enjoy it
+5. Thats it, enjoy it
 
 ## Example
 
