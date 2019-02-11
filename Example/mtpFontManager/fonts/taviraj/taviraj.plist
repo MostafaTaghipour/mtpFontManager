@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Id</key>
+	<integer>2</integer>
+	<key>Family Name</key>
+	<string>Taviraj</string>
+	<key>Default</key>
+	<string>Taviraj-Regular</string>
+	<key>Ultra Light</key>
+	<string>Taviraj-Thin</string>
+	<key>Thin</key>
+	<string>Taviraj-ExtraLight</string>
+	<key>Light</key>
+	<string>Taviraj-Light</string>
+	<key>Regular</key>
+	<string>Taviraj-Regular</string>
+	<key>Medium</key>
+	<string>Taviraj-Medium</string>
+	<key>Semibold</key>
+	<string>Taviraj-Semibold</string>
+	<key>Bold</key>
+	<string>Taviraj-Bold</string>
+	<key>Heavy</key>
+	<string>Taviraj-ExtraBold</string>
+	<key>Black</key>
+	<string>Taviraj-Black</string>
+</dict>
+</plist>

@@ -15,16 +15,27 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		DAD1DB3F1F759B39009C559C /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB391F759B1D009C559C /* Lato-Black.ttf */; };
-		DAD1DB401F759B39009C559C /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB3B1F759B1D009C559C /* Lato-Bold.ttf */; };
-		DAD1DB411F759B39009C559C /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB3E1F759B1D009C559C /* Lato-Hairline.ttf */; };
-		DAD1DB421F759B39009C559C /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB3D1F759B1D009C559C /* Lato-Heavy.ttf */; };
-		DAD1DB431F759B39009C559C /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB3A1F759B1D009C559C /* Lato-Light.ttf */; };
-		DAD1DB441F759B39009C559C /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB3C1F759B1D009C559C /* Lato-Medium.ttf */; };
-		DAD1DB451F759B39009C559C /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB371F759B1D009C559C /* Lato-Regular.ttf */; };
-		DAD1DB461F759B39009C559C /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB381F759B1D009C559C /* Lato-Thin.ttf */; };
-		DAD1DB471F759B39009C559C /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB361F759B1D009C559C /* Lato-Semibold.ttf */; };
-		DAD1DB491F759B8A009C559C /* appFont.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD1DB481F759B8A009C559C /* appFont.plist */; };
+		DA00464E2209FC1800FB068F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00464D2209FC1800FB068F /* SettingViewController.swift */; };
+		DA0046632209FE8F00FB068F /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046502209FE8F00FB068F /* Exo-Black.ttf */; };
+		DA0046642209FE8F00FB068F /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046512209FE8F00FB068F /* Exo-Bold.ttf */; };
+		DA0046652209FE8F00FB068F /* Exo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046522209FE8F00FB068F /* Exo-ExtraBold.ttf */; };
+		DA0046662209FE8F00FB068F /* Exo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046532209FE8F00FB068F /* Exo-ExtraLight.ttf */; };
+		DA0046672209FE8F00FB068F /* Exo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046542209FE8F00FB068F /* Exo-Light.ttf */; };
+		DA0046682209FE8F00FB068F /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046552209FE8F00FB068F /* Exo-Medium.ttf */; };
+		DA0046692209FE8F00FB068F /* Exo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046562209FE8F00FB068F /* Exo-Regular.ttf */; };
+		DA00466A2209FE8F00FB068F /* Exo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046572209FE8F00FB068F /* Exo-SemiBold.ttf */; };
+		DA00466B2209FE8F00FB068F /* Exo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046582209FE8F00FB068F /* Exo-Thin.ttf */; };
+		DA00466C2209FE8F00FB068F /* Taviraj-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA00465A2209FE8F00FB068F /* Taviraj-Black.ttf */; };
+		DA00466D2209FE8F00FB068F /* Taviraj-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA00465B2209FE8F00FB068F /* Taviraj-Bold.ttf */; };
+		DA00466E2209FE8F00FB068F /* Taviraj-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA00465C2209FE8F00FB068F /* Taviraj-ExtraBold.ttf */; };
+		DA00466F2209FE8F00FB068F /* Taviraj-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA00465D2209FE8F00FB068F /* Taviraj-ExtraLight.ttf */; };
+		DA0046702209FE8F00FB068F /* Taviraj-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA00465E2209FE8F00FB068F /* Taviraj-Light.ttf */; };
+		DA0046712209FE8F00FB068F /* Taviraj-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA00465F2209FE8F00FB068F /* Taviraj-Medium.ttf */; };
+		DA0046722209FE8F00FB068F /* Taviraj-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046602209FE8F00FB068F /* Taviraj-Regular.ttf */; };
+		DA0046732209FE8F00FB068F /* Taviraj-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046612209FE8F00FB068F /* Taviraj-SemiBold.ttf */; };
+		DA0046742209FE8F00FB068F /* Taviraj-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0046622209FE8F00FB068F /* Taviraj-Thin.ttf */; };
+		DAB5B7C2220F3B3B0030B2B4 /* taviraj.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA004677220A004600FB068F /* taviraj.plist */; };
+		DAB5B7C3220F3B3D0030B2B4 /* exo.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0046752209FF2000FB068F /* exo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,18 +64,29 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A6B0A31AF2F31A1F8906257 /* Pods-mtpFontManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpFontManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-mtpFontManager_Example/Pods-mtpFontManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7368142BE0AD2C15F0BDA960 /* Pods-mtpFontManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpFontManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mtpFontManager_Tests/Pods-mtpFontManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8AF6A67F98FA15D55998C7FA /* mtpFontManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = mtpFontManager.podspec; path = ../mtpFontManager.podspec; sourceTree = "<group>"; };
+		8AF6A67F98FA15D55998C7FA /* mtpFontManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = mtpFontManager.podspec; path = ../mtpFontManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CEE61C6C6C96FA187A6A8D22 /* Pods-mtpFontManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mtpFontManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mtpFontManager_Example/Pods-mtpFontManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DAD1DB361F759B1D009C559C /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
-		DAD1DB371F759B1D009C559C /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
-		DAD1DB381F759B1D009C559C /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
-		DAD1DB391F759B1D009C559C /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
-		DAD1DB3A1F759B1D009C559C /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
-		DAD1DB3B1F759B1D009C559C /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		DAD1DB3C1F759B1D009C559C /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
-		DAD1DB3D1F759B1D009C559C /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
-		DAD1DB3E1F759B1D009C559C /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
-		DAD1DB481F759B8A009C559C /* appFont.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = appFont.plist; sourceTree = "<group>"; };
+		DA00464D2209FC1800FB068F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DA0046502209FE8F00FB068F /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Black.ttf"; sourceTree = "<group>"; };
+		DA0046512209FE8F00FB068F /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
+		DA0046522209FE8F00FB068F /* Exo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DA0046532209FE8F00FB068F /* Exo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DA0046542209FE8F00FB068F /* Exo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Light.ttf"; sourceTree = "<group>"; };
+		DA0046552209FE8F00FB068F /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Medium.ttf"; sourceTree = "<group>"; };
+		DA0046562209FE8F00FB068F /* Exo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Regular.ttf"; sourceTree = "<group>"; };
+		DA0046572209FE8F00FB068F /* Exo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-SemiBold.ttf"; sourceTree = "<group>"; };
+		DA0046582209FE8F00FB068F /* Exo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Thin.ttf"; sourceTree = "<group>"; };
+		DA00465A2209FE8F00FB068F /* Taviraj-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-Black.ttf"; sourceTree = "<group>"; };
+		DA00465B2209FE8F00FB068F /* Taviraj-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-Bold.ttf"; sourceTree = "<group>"; };
+		DA00465C2209FE8F00FB068F /* Taviraj-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DA00465D2209FE8F00FB068F /* Taviraj-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DA00465E2209FE8F00FB068F /* Taviraj-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-Light.ttf"; sourceTree = "<group>"; };
+		DA00465F2209FE8F00FB068F /* Taviraj-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-Medium.ttf"; sourceTree = "<group>"; };
+		DA0046602209FE8F00FB068F /* Taviraj-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-Regular.ttf"; sourceTree = "<group>"; };
+		DA0046612209FE8F00FB068F /* Taviraj-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-SemiBold.ttf"; sourceTree = "<group>"; };
+		DA0046622209FE8F00FB068F /* Taviraj-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taviraj-Thin.ttf"; sourceTree = "<group>"; };
+		DA0046752209FF2000FB068F /* exo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exo.plist; sourceTree = "<group>"; };
+		DA004677220A004600FB068F /* taviraj.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = taviraj.plist; sourceTree = "<group>"; };
 		E75D269ACB0E106C7FFCCC7C /* Pods_mtpFontManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mtpFontManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EB53BDC6A8796F2C1E5E1E /* Pods_mtpFontManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mtpFontManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,7 +135,6 @@
 		607FACD21AFB9204008FA782 /* Example for mtpFontManager */ = {
 			isa = PBXGroup;
 			children = (
-				DAD1DB481F759B8A009C559C /* appFont.plist */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -121,6 +142,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				DA00464D2209FC1800FB068F /* SettingViewController.swift */,
 			);
 			name = "Example for mtpFontManager";
 			path = mtpFontManager;
@@ -181,18 +203,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA00464F2209FE8F00FB068F /* exo */ = {
+			isa = PBXGroup;
+			children = (
+				DA0046752209FF2000FB068F /* exo.plist */,
+				DA0046502209FE8F00FB068F /* Exo-Black.ttf */,
+				DA0046512209FE8F00FB068F /* Exo-Bold.ttf */,
+				DA0046522209FE8F00FB068F /* Exo-ExtraBold.ttf */,
+				DA0046532209FE8F00FB068F /* Exo-ExtraLight.ttf */,
+				DA0046542209FE8F00FB068F /* Exo-Light.ttf */,
+				DA0046552209FE8F00FB068F /* Exo-Medium.ttf */,
+				DA0046562209FE8F00FB068F /* Exo-Regular.ttf */,
+				DA0046572209FE8F00FB068F /* Exo-SemiBold.ttf */,
+				DA0046582209FE8F00FB068F /* Exo-Thin.ttf */,
+			);
+			path = exo;
+			sourceTree = "<group>";
+		};
+		DA0046592209FE8F00FB068F /* taviraj */ = {
+			isa = PBXGroup;
+			children = (
+				DA004677220A004600FB068F /* taviraj.plist */,
+				DA00465A2209FE8F00FB068F /* Taviraj-Black.ttf */,
+				DA00465B2209FE8F00FB068F /* Taviraj-Bold.ttf */,
+				DA00465C2209FE8F00FB068F /* Taviraj-ExtraBold.ttf */,
+				DA00465D2209FE8F00FB068F /* Taviraj-ExtraLight.ttf */,
+				DA00465E2209FE8F00FB068F /* Taviraj-Light.ttf */,
+				DA00465F2209FE8F00FB068F /* Taviraj-Medium.ttf */,
+				DA0046602209FE8F00FB068F /* Taviraj-Regular.ttf */,
+				DA0046612209FE8F00FB068F /* Taviraj-SemiBold.ttf */,
+				DA0046622209FE8F00FB068F /* Taviraj-Thin.ttf */,
+			);
+			path = taviraj;
+			sourceTree = "<group>";
+		};
 		DAD1DB231F759A6F009C559C /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				DAD1DB391F759B1D009C559C /* Lato-Black.ttf */,
-				DAD1DB3B1F759B1D009C559C /* Lato-Bold.ttf */,
-				DAD1DB3E1F759B1D009C559C /* Lato-Hairline.ttf */,
-				DAD1DB3D1F759B1D009C559C /* Lato-Heavy.ttf */,
-				DAD1DB3A1F759B1D009C559C /* Lato-Light.ttf */,
-				DAD1DB3C1F759B1D009C559C /* Lato-Medium.ttf */,
-				DAD1DB371F759B1D009C559C /* Lato-Regular.ttf */,
-				DAD1DB381F759B1D009C559C /* Lato-Thin.ttf */,
-				DAD1DB361F759B1D009C559C /* Lato-Semibold.ttf */,
+				DA00464F2209FE8F00FB068F /* exo */,
+				DA0046592209FE8F00FB068F /* taviraj */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -209,7 +258,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				F88D50C379754DC37D56F650 /* [CP] Embed Pods Frameworks */,
-				ECC8281F60768999573FD8CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,8 +276,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				964E3C5C3FFFF29785B16D7B /* [CP] Embed Pods Frameworks */,
-				18F0DCC7BEDE87F967318D6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,11 +299,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -286,19 +332,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD1DB491F759B8A009C559C /* appFont.plist in Resources */,
-				DAD1DB421F759B39009C559C /* Lato-Heavy.ttf in Resources */,
-				DAD1DB3F1F759B39009C559C /* Lato-Black.ttf in Resources */,
-				DAD1DB401F759B39009C559C /* Lato-Bold.ttf in Resources */,
-				DAD1DB411F759B39009C559C /* Lato-Hairline.ttf in Resources */,
-				DAD1DB461F759B39009C559C /* Lato-Thin.ttf in Resources */,
-				DAD1DB471F759B39009C559C /* Lato-Semibold.ttf in Resources */,
-				DAD1DB441F759B39009C559C /* Lato-Medium.ttf in Resources */,
+				DA0046722209FE8F00FB068F /* Taviraj-Regular.ttf in Resources */,
+				DA00466C2209FE8F00FB068F /* Taviraj-Black.ttf in Resources */,
+				DA00466A2209FE8F00FB068F /* Exo-SemiBold.ttf in Resources */,
+				DA0046672209FE8F00FB068F /* Exo-Light.ttf in Resources */,
+				DAB5B7C3220F3B3D0030B2B4 /* exo.plist in Resources */,
+				DA0046712209FE8F00FB068F /* Taviraj-Medium.ttf in Resources */,
+				DA00466B2209FE8F00FB068F /* Exo-Thin.ttf in Resources */,
+				DA00466D2209FE8F00FB068F /* Taviraj-Bold.ttf in Resources */,
+				DA0046662209FE8F00FB068F /* Exo-ExtraLight.ttf in Resources */,
+				DA0046692209FE8F00FB068F /* Exo-Regular.ttf in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				DA0046742209FE8F00FB068F /* Taviraj-Thin.ttf in Resources */,
+				DA0046632209FE8F00FB068F /* Exo-Black.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				DAD1DB451F759B39009C559C /* Lato-Regular.ttf in Resources */,
+				DA00466F2209FE8F00FB068F /* Taviraj-ExtraLight.ttf in Resources */,
+				DA00466E2209FE8F00FB068F /* Taviraj-ExtraBold.ttf in Resources */,
+				DA0046702209FE8F00FB068F /* Taviraj-Light.ttf in Resources */,
+				DAB5B7C2220F3B3B0030B2B4 /* taviraj.plist in Resources */,
+				DA0046652209FE8F00FB068F /* Exo-ExtraBold.ttf in Resources */,
+				DA0046682209FE8F00FB068F /* Exo-Medium.ttf in Resources */,
+				DA0046642209FE8F00FB068F /* Exo-Bold.ttf in Resources */,
+				DA0046732209FE8F00FB068F /* Taviraj-SemiBold.ttf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				DAD1DB431F759B39009C559C /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,36 +386,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		18F0DCC7BEDE87F967318D6C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mtpFontManager_Tests/Pods-mtpFontManager_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		964E3C5C3FFFF29785B16D7B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mtpFontManager_Tests/Pods-mtpFontManager_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B0741884E0F3047221CC419B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,21 +404,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ECC8281F60768999573FD8CA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mtpFontManager_Example/Pods-mtpFontManager_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F88D50C379754DC37D56F650 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,10 +411,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mtpFontManager_Example/Pods-mtpFontManager_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
 				"${BUILT_PRODUCTS_DIR}/mtpFontManager/mtpFontManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mtpFontManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +433,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				DA00464E2209FC1800FB068F /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,8 +588,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -590,8 +603,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -612,8 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -629,8 +640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

@@ -16,7 +16,7 @@ import UIKit
 /**
  `DynamicTypeManager` is a singleton that watches for the `UIContentSizeCategoryDidChangeNotification` notification and then updates all views to the new size accordingly. By default, Dynamic Type only works with the system font. DynamicTypeManager allows any font installed to be substituted.
  */
-public class DynamicTypeManager {
+class DynamicTypeManager {
     
     fileprivate struct Values {
         static let fontKeyPathUILabel =   "font"
@@ -28,7 +28,7 @@ public class DynamicTypeManager {
     /**
      The singleton instance of `DynamicTypeManager`.
      */
-    public static let shared = DynamicTypeManager()
+    static let shared = DynamicTypeManager()
     
     /// Storage and lookup for the views `DynamicTypeManager` is tracking.
     private var elementToTypeTable = NSMapTable<AnyObject, AnyObject>.weakToStrongObjects()
@@ -51,7 +51,7 @@ public class DynamicTypeManager {
      - Parameter textStyle: The equivalent text style to size against.
      - Parameter fontName: The name of the custom font to use.
      */
-    public func watchLabel(label: UILabel, textStyle: String, fontName: String) {
+    func watchLabel(label: UILabel, textStyle: String, fontName: String) {
         watchElement(view: label, fontKeyPath: Values.fontKeyPathUILabel, textStyle: textStyle, fontName: fontName)
     }
     
@@ -62,7 +62,7 @@ public class DynamicTypeManager {
      - Parameter textStyle: The equivalent text style to size against.
      - Parameter fontName: The name of the custom font to use.
      */
-    public func watchButton(button: UIButton, textStyle: String, fontName: String) {
+    func watchButton(button: UIButton, textStyle: String, fontName: String) {
         watchElement(view: button, fontKeyPath: Values.fontKeyPathUIButton, textStyle: textStyle, fontName: fontName)
     }
     
@@ -73,7 +73,7 @@ public class DynamicTypeManager {
      - Parameter textStyle: The equivalent text style to size against.
      - Parameter fontName: The name of the custom font to use.
      */
-    public func watchTextField(textField: UITextField, textStyle: String, fontName: String) {
+    func watchTextField(textField: UITextField, textStyle: String, fontName: String) {
         watchElement(view: textField, fontKeyPath: Values.fontKeyPathTextField, textStyle: textStyle, fontName: fontName)
     }
     
@@ -84,7 +84,7 @@ public class DynamicTypeManager {
      - Parameter textStyle: The equivalent text style to size against.
      - Parameter fontName: The name of the custom font to use.
      */
-    public func watchTextView(textView: UITextView, textStyle: String, fontName: String) {
+    func watchTextView(textView: UITextView, textStyle: String, fontName: String) {
         watchElement(view: textView, fontKeyPath: Values.fontKeyPathTextView, textStyle: textStyle, fontName: fontName)
     }
     
@@ -275,7 +275,7 @@ fileprivate class CustomNSMapTable: NSMapTable<AnyObject, AnyObject> {
  */
 public struct StyleWatcher {
     /// An empty config object that is used if one is not passed into the watch methods.
-    public static var defaultConfig = StyleConfig()
+    public static var config : StyleConfig? = StyleConfig()
     
     /// Default initializer
     public init() {}
@@ -288,7 +288,7 @@ public struct StyleWatcher {
      - Parameter inView: The container view to enumerate over.
      - Parameter withConfig: A `StyleConfig` to use on any appropriate views.
      */
-    public func watchViews(inView container: UIView, withConfig config: StyleConfig = defaultConfig) {
+    public func watchViews(inView container: UIView, withConfig config: StyleConfig? = config) {
         for view in container.subviews {
             switch view {
             case view as UIButton: watchButton(button: view as! UIButton, withConfig: config)
@@ -307,9 +307,9 @@ public struct StyleWatcher {
      - Parameter button: The button to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    public func watchButton(button: UIButton, withConfig config: StyleConfig = defaultConfig) {
+    public func watchButton(button: UIButton, withConfig config: StyleConfig? = config) {
         guard let textStyle = button.textStyle,
-            let customFontName = config.button[textStyle],
+            let customFontName = config?.button[textStyle],
             let fontName = customFontName else { return }
         DynamicTypeManager.shared.watchButton(button: button, textStyle: textStyle, fontName: fontName)
     }
@@ -320,9 +320,9 @@ public struct StyleWatcher {
      - Parameter label: The button to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    public func watchLabel(label: UILabel, withConfig config: StyleConfig = defaultConfig) {
+    public func watchLabel(label: UILabel, withConfig config: StyleConfig? = config) {
         guard let textStyle = label.textStyle,
-            let customFontName = config.label[textStyle],
+            let customFontName = config?.label[textStyle],
             let fontName = customFontName else { return }
         DynamicTypeManager.shared.watchLabel(label: label, textStyle: textStyle, fontName: fontName)
     }
@@ -333,9 +333,9 @@ public struct StyleWatcher {
      - Parameter textField: The text field to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    public func watchTextField(textField: UITextField, withConfig config: StyleConfig = defaultConfig) {
+    public func watchTextField(textField: UITextField, withConfig config: StyleConfig? = config) {
         guard let textStyle = textField.textStyle,
-            let customFontName = config.textField[textStyle],
+            let customFontName = config?.textField[textStyle],
             let fontName = customFontName else { return }
         DynamicTypeManager.shared.watchTextField(textField: textField, textStyle: textStyle, fontName: fontName)
     }
@@ -346,17 +346,12 @@ public struct StyleWatcher {
      - Parameter textView: The text view to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    public func watchTextView(textView: UITextView, withConfig config: StyleConfig = defaultConfig) {
+    public func watchTextView(textView: UITextView, withConfig config: StyleConfig? = config) {
         guard let textStyle = textView.textStyle,
-            let customFontName = config.textView[textStyle],
+            let customFontName = config?.textView[textStyle],
             let fontName = customFontName else { return }
         DynamicTypeManager.shared.watchTextView(textView: textView, textStyle: textStyle, fontName: fontName)
     }
 }
 
-fileprivate struct Constants {
-    /// The name of the attribute that Dynamic Type uses when a text style is
-    /// set in Interface Builder.
-    static let dynamicTextAttribute =  UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")
-}
 

@@ -1,16 +1,23 @@
 PODS:
-  - mtpFontManager (1.0.0)
+  - FontBlaster (4.1.0)
+  - mtpFontManager (1.0.6)
 
 DEPENDENCIES:
+  - FontBlaster
   - mtpFontManager (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FontBlaster
 
 EXTERNAL SOURCES:
   mtpFontManager:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  mtpFontManager: 2af93b4d3b7420d3e1eb238e3fe1e7429504fa05
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  mtpFontManager: d1c2da2b23e5e316122655999ca0380f20194dfd
 
-PODFILE CHECKSUM: 1273ae0962c2b6a976237f3a7c1420652255c265
+PODFILE CHECKSUM: b88cdcda4f78b03db802ad3125f64d7ecca7cabb
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

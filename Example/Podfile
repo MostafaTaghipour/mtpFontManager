@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'mtpFontManager_Example' do
   pod 'mtpFontManager', :path => '../'
+  pod 'FontBlaster'
 
   target 'mtpFontManager_Tests' do
     inherit! :search_paths

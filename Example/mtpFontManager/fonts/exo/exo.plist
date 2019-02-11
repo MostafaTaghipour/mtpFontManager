@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Id</key>
+	<integer>1</integer>
+	<key>Family Name</key>
+	<string>Exo</string>
+	<key>Default</key>
+	<string>Exo-Regular</string>
+	<key>Ultra Light</key>
+	<string>Exo-Thin</string>
+	<key>Thin</key>
+	<string>Exo-ExtraLight</string>
+	<key>Light</key>
+	<string>Exo-Light</string>
+	<key>Regular</key>
+	<string>Exo-Regular</string>
+	<key>Medium</key>
+	<string>Exo-Medium</string>
+	<key>Semibold</key>
+	<string>Exo-Semibold</string>
+	<key>Bold</key>
+	<string>Exo-Bold</string>
+	<key>Heavy</key>
+	<string>Exo-ExtraBold</string>
+	<key>Black</key>
+	<string>Exo-Black</string>
+</dict>
+</plist>

@@ -6,44 +6,61 @@
 //  Copyright (c) 2017 mostafa.taghipour@ymail.com. All rights reserved.
 //
 
-import UIKit
+import FontBlaster
 import mtpFontManager
+import UIKit
+
+
+let persistFontKey = "font"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
+    
+    lazy var exo: AppFont = {
+        let font = AppFont(
+            id: 1,
+            familyName: "Exo",
+            defaultFont: "Exo-Regular",
+            ultraLight: "Exo-Thin",
+            thin: "Exo-ExtraLight",
+            light: "Exo-Light",
+            regular: "Exo-Regular",
+            medium: "Exo-Medium",
+            semibold: "Exo-Semibold",
+            bold: "Exo-Bold",
+            heavy: "Exo-ExtraBold",
+            black: "Exo-Black"
+        )
+        return font
+    }()
+    
+    
+    lazy var taviraj: AppFont = {
+        let font = AppFont(plist: "taviraj")
+        return font
+    }()
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        FontManager.setFont(plist: "appFont")
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // load fonts in main bundle
+        FontBlaster.blast { fonts in
+            print(fonts)
+        }
         UIFont.printAllFonts()
+
+        if let savedFont = UserDefaults.standard.string(forKey: persistFontKey) {
+            switch savedFont {
+            case exo.familyName:
+                FontManager.shared.currentFont = exo
+                break
+            case taviraj.familyName:
+                FontManager.shared.currentFont = taviraj
+                break
+            default:
+                break
+            }
+        }
+
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
-

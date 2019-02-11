@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="M7s-AA-gq6">
             <objects>
-                <tabBarController id="Nuv-7X-JGx" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbarController" id="Nuv-7X-JGx" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hni-Xg-RWU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="yYs-18-dCH" kind="relationship" relationship="viewControllers" id="8CA-am-TKk"/>
                         <segue destination="KVy-vw-Gw0" kind="relationship" relationship="viewControllers" id="DLi-Ge-7pl"/>
+                        <segue destination="C98-fi-jyF" kind="relationship" relationship="viewControllers" id="gKO-o2-8No"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TmF-JQ-CDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,7 +31,7 @@
         <!--System font-->
         <scene sceneID="fJn-7F-sWl">
             <objects>
-                <viewController title="System font" id="yYs-18-dCH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weightVC" title="System font" id="yYs-18-dCH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zVq-S8-Vfu"/>
                         <viewControllerLayoutGuide type="bottom" id="Bex-hc-xWQ"/>
@@ -115,7 +116,7 @@
         <!--Dynamic Types-->
         <scene sceneID="7ky-tq-bgg">
             <objects>
-                <viewController title="Dynamic Types" id="KVy-vw-Gw0" customClass="ViewController" customModule="mtpFontManager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dynamicTypeVC" title="Dynamic Types" id="KVy-vw-Gw0" customClass="ViewController" customModule="mtpFontManager_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xRs-oS-6bN"/>
                         <viewControllerLayoutGuide type="bottom" id="yQF-Bi-P0H"/>
@@ -209,7 +210,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ai2-Db-1rM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="908"/>
+            <point key="canvasLocation" x="1590" y="896"/>
+        </scene>
+        <!--Dynamic Types-->
+        <scene sceneID="rYA-1Y-cBo">
+            <objects>
+                <viewController storyboardIdentifier="settingVC" title="Dynamic Types" id="C98-fi-jyF" customClass="SettingViewController" customModule="mtpFontManager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ORP-8i-Q0u"/>
+                        <viewControllerLayoutGuide type="bottom" id="3p8-E7-uAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gwp-zA-J8I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="urZ-ww-yqB">
+                                <rect key="frame" x="16" y="215.5" width="343" height="236.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-ZX-sSL">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpY-cg-GoY">
+                                        <rect key="frame" x="0.0" y="20.5" width="343" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="urZ-ww-yqB" secondAttribute="trailing" id="XBs-WF-jNp"/>
+                            <constraint firstItem="urZ-ww-yqB" firstAttribute="leading" secondItem="gwp-zA-J8I" secondAttribute="leadingMargin" id="XOt-gq-oBC"/>
+                            <constraint firstItem="urZ-ww-yqB" firstAttribute="centerY" secondItem="gwp-zA-J8I" secondAttribute="centerY" id="uV5-BH-9Jc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="qUS-8t-U5m"/>
+                    <connections>
+                        <outlet property="pickerView" destination="kpY-cg-GoY" id="Ebp-LB-O8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pu4-AZ-blR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="1646"/>
         </scene>
     </scenes>
 </document>
