@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mtpFontManager'
-  s.version          = '2.0.3'
+  s.version          = '2.0.4'
   s.summary          = 'A font Manager for iOS to simplify use of custom fonts (support dynamic types).'
 
 # This description is used to generate tags and improve search results.

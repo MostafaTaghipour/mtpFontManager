@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - define title property for UIFont.Weight
 public extension UIFont.Weight {
-    public var title:String{
+    var title:String{
         switch self {
         case .ultraLight:
             return "Ultra Light"
@@ -41,7 +41,7 @@ public extension UIFont.Weight {
 // MARK: - define contains method for UIFont Class
 public extension UIFont {
     
-    public class func contains(fontWith name:String) -> Bool{
+    class func contains(fontWith name:String) -> Bool{
         for family in familyNames {
             for fontName in fontNames(forFamilyName: family) {
                 if fontName==name{
@@ -52,7 +52,7 @@ public extension UIFont {
         return false
     }
     
-    public class func printAllFonts(){
+    class func printAllFonts(){
         #if DEBUG
         for family in familyNames {
             print(family)
